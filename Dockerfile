@@ -96,8 +96,8 @@ ENV VPN_DOMAIN=vpn.easypi.info \
     VPN_NETMASK=255.255.255.0  \
     LAN_NETWORK=192.168.0.0    \
     LAN_NETMASK=255.255.0.0    \
-    VPN_USERNAME=username      \
-    VPN_PASSWORD=password      \
+    VPN_USERNAME=vpn      \
+    VPN_PASSWORD=vpn      \
     TERM=xterm
 
 EXPOSE 443/tcp 443/udp
