@@ -54,8 +54,8 @@ if [ ! -f /etc/ocserv/certs/server-key.pem ] || [ ! -f /etc/ocserv/certs/server-
 
 	# Create a test user
 	if [ -z "$NO_TEST_USER" ] && [ ! -f /etc/ocserv/ocpasswd ]; then
-		echo "Create test user 'test' with password 'test'"
-		echo 'test:Route,All:$5$DktJBFKobxCFd7wN$sn.bVw8ytyAaNamO.CvgBvkzDiFR6DaHdUzcif52KK7' > /etc/ocserv/ocpasswd
+		echo "Create test user 'vpn' with password 'vpn'"
+                echo "vpn" | ocpasswd -c /etc/ocserv/ocpasswd "vpn"
 	fi
 fi
 
